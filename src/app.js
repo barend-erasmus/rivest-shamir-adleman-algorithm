@@ -63,8 +63,8 @@ var isValid = (e * d) % r == 1;
 
 
 var msg = 54;
-var encryptedMsg = Math.pow(msg, e) % n;
-var decryptedMsg = Math.pow(encryptedMsg, d) % n;
+var encryptedMsg = Math.pow(msg, e) % n; // public key
+var decryptedMsg = Math.pow(encryptedMsg, d) % n; // private key
 
 console.log('p = ' + p);
 console.log('q = ' + q);
