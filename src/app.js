@@ -20,12 +20,9 @@ function findNthPrimeNumber(n) {
 
 
 function isPrime(n) {
-    if (n < 2) return false;
-    for (var i = 2; i < n; i++) {
-        if (n % i == 0)
-            return false;
-    }
-    return true;
+    for (var i = 2; i < n; i++)
+        if (n % i === 0) return false;
+    return n !== 1;
 }
 
 function largestPrimeFactor(n) {
@@ -54,12 +51,12 @@ for (var i = 0; i < 20; i++) {
     }
 }
 
-var factors = [ largestPrimeFactor(k), k / largestPrimeFactor(k)];
+var factors = [largestPrimeFactor(k), k / largestPrimeFactor(k)];
 
 var e = factors[0];
 var d = factors[1];
 
-var isValid = (e * d) % r == 1; 
+var isValid = (e * d) % r == 1;
 
 
 var msg = 54;
