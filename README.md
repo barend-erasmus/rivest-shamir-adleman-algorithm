@@ -36,6 +36,6 @@ To encrypt a message:
 
 `Math.pow(msg, e) % n`
 
-To Decypt a message:
+To Decrypt a message:
 
 `Math.pow(msg, d) % n`
